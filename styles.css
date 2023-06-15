@@ -176,6 +176,96 @@ body {
 
 /* main page finish */
 
+ /* desktop menu */
+
+  .desktop-menu {
+    width: 110px;
+    height: auto;
+    border: 1px solid var(--VeryLightPink);
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px
+  }
+
+  .desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+  }
+
+  .desktop-menu ul li {
+    text-align: end;
+  }
+
+  .desktop-menu ul li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+.desktop-menu ul li:not(:last-child) {
+  font-weight: bold;
+}
+
+
+  .desktop-menu ul li:last-child {
+    padding-top: 10px;
+    border-top: 1px solid var(--VeryLightPink);
+    color: var(--HospitalGreen);
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+ /* desktop menu finish */
+
+
+/* mobile menu */
+
+  .menu-mobile {
+    padding: 24px;
+  }
+
+  .menu-mobile a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .menu-mobile ul {
+    padding: 0;
+    margin: 24px 0;
+    list-style: none;
+  }
+  li {
+    margin: 24px 0;
+  }
+
+  .menu-mobile ul:nth-child(1) {
+    border-bottom: 1px solid var(--VeryLightPink);
+  }
+
+  .menu-mobile ul {
+    margin-bottom: 20px;
+  }
+
+  .bottom {
+    margin: 320px 0;
+  }
+
+  .bottom .bottom-email {
+    color: var(--VeryLightPink);
+    font-size: 12px;
+  }
+
+  .bottom .sign-out-bottom {
+    color: var(--HospitalGreen);
+    font-size: 12px;
+  }
+
+/* mobile menu finish */
+
+
 @media (max-width: 360px) {
   .a-sign-up-button,
   .password-submit,
