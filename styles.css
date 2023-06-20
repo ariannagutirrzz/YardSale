@@ -368,6 +368,69 @@ div .order-product p:nth-child(2) {
 /* !ORDERS SECTION FINISH */
 
 
+/* Nav-bar */
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav-bar {
+    border-bottom: 1px solid var(--VeryLightPink);
+  }
+
+  .nav-bar a,ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    color: var(--VeryLightPink);
+  }
+
+  li {
+    padding: 0 18px;
+  }
+
+  /* I had to add another li element because the property "last child" was changing the last element on the left side too. */
+
+  li:hover:not(:last-child) {
+    border: 2px solid var(--HospitalGreen);
+    border-radius: 8px;
+  }
+
+  .right img:nth-child(2){
+    transform: rotate(90deg);
+    margin-right: 20px;
+}
+
+  img {
+    cursor: pointer;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: var(--HospitalGreen);
+  }
+
+  .right a {
+    color: rgb(73, 70, 70);
+  }
+
+.left {
+  display: flex;
+  padding-left: 40px;
+}
+
+.right {
+  display: flex;
+  margin-left: 400px;
+  font-size: 15px;
+}
+
+/* Nav bar finish */
+
 @media (max-width: 360px) {
   .a-sign-up-button,
   .password-submit,
@@ -391,4 +454,22 @@ div .order-product p:nth-child(2) {
     width: 140px;
     height: 140px;
   }
-}
+
+    /* nav-bar mobile */
+
+    .left {
+      display: none;
+    }
+
+    .right {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 16px 10px 10px 10px;
+    }
+
+    /* nav-bar movile finish */
+  }
