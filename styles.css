@@ -434,9 +434,6 @@ a:hover {
 
 /* product info */
 
-.product-info {
-
-}
 
 .product-photo img {
   border-radius: 8px;
@@ -474,15 +471,15 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 90%;
+  width: 94%;
   height: 50px;
-  bottom: 20px;
+  margin-top: 24px;
   color: white;
   background-color: var(--HospitalGreen);
   border: 1px solid var(--HospitalGreen);
   border-radius: 10px;
-
+  position: absolute;
+  bottom: 20px;
 }
 
 
@@ -535,10 +532,28 @@ a:hover {
 @media (min-width:540px) {
     /* product detail section */
 
+    .product-detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8%;
+    }
+
     .product-photo img { 
-      width: 24%;
+      width: auto;
+      object-fit: cover;
+    }
+
+    .text-product {
+      width: 30%;
+      margin-bottom: 100px;
     }
   
+    .add-to-cart button {
+      width: 58vh;
+      margin-bottom: 208px;
+  
+    }
     /* product detail section finish */
   
-}
+  }
