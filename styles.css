@@ -13,6 +13,8 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 1.5rem;
 }
 
 .login {
@@ -136,14 +138,14 @@ body {
 }
 
 .product-card {
-  width: 240px;
+  width: 100%;
 }
 
 .product-card img {
-  width: 240px;
-  height: 240px;
+  width: 100%;
   border-radius: 20px;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .product-info {
@@ -485,7 +487,7 @@ a:hover {
 
 /* product info finish */
 
-@media (max-width: 360px) {
+@media (max-width: 539px) {
   .a-sign-up-button,
   .password-submit,
   .edit-submit {
@@ -497,16 +499,7 @@ a:hover {
   }
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 140px);
-  }
-
-  .product-card {
-    width: 140px;
-  }
-
-  .product-card img {
-    width: 140px;
-    height: 140px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* nav-bar mobile */
