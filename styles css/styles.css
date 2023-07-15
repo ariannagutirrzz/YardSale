@@ -179,12 +179,20 @@ body {
 /* desktop menu */
 
 .desktop-menu {
-  width: 110px;
+  width: 100px;
   height: auto;
   border: 1px solid var(--VeryLightPink);
   border-radius: 6px;
-  padding: 12px;
+  margin: 8px;
+  padding: 8px;
   font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
 }
 
 .desktop-menu ul {
@@ -206,14 +214,18 @@ body {
 
 .desktop-menu ul li:not(:last-child) {
   font-weight: bold;
+
+  .border {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--VeryLightPink);
+  }
 }
 
-.desktop-menu ul li:last-child {
-  padding-top: 10px;
-  border-top: 1px solid var(--VeryLightPink);
+.color {
   color: var(--HospitalGreen);
   font-size: 12px;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 /* desktop menu finish */
@@ -327,7 +339,12 @@ body {
 
 div .order-product p:nth-child(2) {
   color: #858585ad;
-  margin-left: 20px;
+  margin-left: 20a href
+  a href
+  a href
+  a href
+  a href
+  a hrefpx;
 }
 
 .product-info-order > p:nth-child(3) {
@@ -392,13 +409,13 @@ ul {
   color: var(--VeryLightPink);
 }
 
-li {
+.li-navbar {
   padding: 0 18px;
 }
 
 /* I had to add another li element because the property "last child" was changing the last element on the left side too. */
 
-li:hover:not(:last-child) {
+.border-green:hover:not(:last-child) {
   border: 2px solid var(--HospitalGreen);
   border-radius: 8px;
 }
