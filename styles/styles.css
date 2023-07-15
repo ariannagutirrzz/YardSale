@@ -385,9 +385,13 @@ div .order-product p:nth-child(2) {
   padding: 0 0 0 10px;
 }
 
-/* !ORDERS SECTION FINISH */
+/* !Nav-bar */
 
-/* Nav-bar */
+
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
 
 .mobile-nav {
   display: none;
@@ -445,11 +449,10 @@ a:hover {
 
 .right {
   display: flex;
-  margin-left: 400px;
   font-size: 15px;
 }
 
-/* Nav bar finish */
+/* !Nav bar finish */
 
   /* !SEPARATION */
 
