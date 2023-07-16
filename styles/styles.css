@@ -133,6 +133,7 @@ body {
   grid-template-columns: repeat(auto-fill, 240px);
   gap: 26px;
   place-content: center;
+  margin-top: 20px;
 }
 
 .product-card {
@@ -174,8 +175,6 @@ body {
   color: var(--VeryLightPink);
 }
 
-/* main page finish */
-
 /* desktop menu */
 
 .desktop-menu {
@@ -190,6 +189,7 @@ body {
   padding: 8px;
   font-size: 14px;
   padding-top: 18px;
+  background-color: white;
 }
 
 .flex {
@@ -237,8 +237,6 @@ body {
   color: black;
 }
 
-/* desktop menu finish */
-
 /* mobile menu */
 
 .menu-mobile {
@@ -285,8 +283,6 @@ body {
   color: var(--HospitalGreen);
   font-size: 12px;
 }
-
-/* mobile menu finish */
 
 /* my order */
 
@@ -359,7 +355,6 @@ div .order-product p:nth-child(2) {
   font-weight: bold;
 }
 
-/* my order finish */
 
 /* !ORDERS SECTION */
 
@@ -457,8 +452,6 @@ a:hover {
   font-size: 15px;
 }
 
-/* !Nav bar finish */
-
   /* !SEPARATION */
 
 /* SHOPPING CART */
@@ -486,7 +479,6 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-/* SHOPPING CART FINISH */
 
   /* !SEPARATION */
 
@@ -537,11 +529,9 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-/* product info finish */
-
 /* !RESPONSIVE */
 
-@media (max-width: 360px) {
+@media (max-width: 640px) {
   .a-sign-up-button,
   .password-submit,
   .edit-submit {
@@ -581,43 +571,46 @@ a:hover {
     margin: 16px 10px 10px 10px;
   }
 
-  /* nav-bar movile finish */
+   /* product detail section */
+
+   .product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+  }
+
+  .product-photo img { 
+    width: auto;
+    object-fit: cover;
+  }
+
+  .text-product {
+    width: 30%;
+    margin-bottom: 100px;
+  }
+
+  .add-to-cart button {
+    width: 58vh;
+    margin-bottom: 208px;
+
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
 }
 
+@media (min-width:641px) {
+  .menu-mobile {
+   display: none;
+  }
+ }
 
-/* !JAVASCRIPT SECTION */
+/* !JAVASCRIPT STYLES */
 
   .inactive {
     display: none;
   }
 
-/* !JAVASCRIPT SECTION FINISH */
-
-@media (min-width:540px) {
-    /* product detail section */
-
-    .product-detail {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 8%;
-    }
-
-    .product-photo img { 
-      width: auto;
-      object-fit: cover;
-    }
-
-    .text-product {
-      width: 30%;
-      margin-bottom: 100px;
-    }
-  
-    .add-to-cart button {
-      width: 58vh;
-      margin-bottom: 208px;
-  
-    }
-    /* product detail section finish */
-  
-  }
