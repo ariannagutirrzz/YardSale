@@ -239,6 +239,8 @@ body {
 
 .menu-mobile {
   padding: 24px;
+  width: 90%;
+  height: auto;
 }
 
 .menu-mobile a {
@@ -285,9 +287,10 @@ body {
 /* my order */
 
 .my-order {
-  width: 100%;
+  max-width: 800px;
   display: grid;
   align-items: center;
+  margin: auto;
 }
 
 .articles-box {
@@ -344,12 +347,7 @@ body {
 
 div .order-product p:nth-child(2) {
   color: #858585ad;
-  margin-left: 20a href
-  a href
-  a href
-  a href
-  a href
-  a hrefpx;
+  margin-left: 20px;
 }
 
 .product-info-order > p:nth-child(3) {
@@ -410,12 +408,14 @@ div .order-product p:nth-child(2) {
   border-bottom: 1px solid var(--VeryLightPink);
 }
 
-.nav-bar a,
-ul {
-  text-decoration: none;
+.navbar-ul {
   list-style: none;
   display: flex;
+}
+
+.nav-bar a {
   color: var(--VeryLightPink);
+  text-decoration: none;
 }
 
 .li-navbar {
@@ -424,10 +424,6 @@ ul {
 
 /* I had to add another li element because the property "last child" was changing the last element on the left side too. */
 
-.border-green:hover:not(:last-child) {
-  border: 2px solid var(--HospitalGreen);
-  border-radius: 8px;
-}
 
 .right img:nth-child(2) {
   transform: rotate(90deg);
