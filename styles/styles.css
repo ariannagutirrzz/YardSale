@@ -233,6 +233,10 @@ body {
   text-decoration: none;
 }
 
+.color:hover {
+  color: black;
+}
+
 /* desktop menu finish */
 
 /* mobile menu */
@@ -585,10 +589,7 @@ a:hover {
 
   .inactive {
     display: none;
-    transition: 3s;
-    user-select: none;
   }
-
 
 /* !JAVASCRIPT SECTION FINISH */
 
