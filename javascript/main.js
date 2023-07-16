@@ -7,6 +7,8 @@ const mobileMenu = document.querySelector(".menu-mobile");
 const cart = document.querySelector(".cart");
 const order = document.querySelector(".my-order");
 
+const cardsConstainer = document.querySelector(".cards-container")
+
 flechita.addEventListener("click", toggleMenu);
 menuEmail.addEventListener("click", toggleMenu);
 barrasMenu.addEventListener("click", barritas);
@@ -19,6 +21,7 @@ function toggleMenu() {
 function barritas() {
   mobileMenu.classList.toggle("inactive");
   order.classList.add("inactive");
+  cardsConstainer.classList.add("inactive")
 }
 
 function cartShopping() {
