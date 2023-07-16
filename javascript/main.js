@@ -1,18 +1,20 @@
 const menuEmail = document.querySelector(".navbar-email");
 const desktopMenu = document.querySelector(".desktop-menu");
 const flechita = document.querySelector(".flechita");
+const cardsConstainer = document.querySelector(".cards-container")
 
 const barrasMenu = document.querySelector(".barritas");
 const mobileMenu = document.querySelector(".menu-mobile");
 const cart = document.querySelector(".cart");
+const cartMobile = document.querySelector(".cart-mobile");
 const order = document.querySelector(".my-order");
 
-const cardsConstainer = document.querySelector(".cards-container")
 
 flechita.addEventListener("click", toggleMenu);
 menuEmail.addEventListener("click", toggleMenu);
 barrasMenu.addEventListener("click", barritas);
-cart.addEventListener("click", cartShopping);
+cart.addEventListener("click", shoppingCart);
+cartMobile.addEventListener("click", shoppingCart)
 
 function toggleMenu() {
   desktopMenu.classList.toggle("inactive");
@@ -21,10 +23,10 @@ function toggleMenu() {
 function barritas() {
   mobileMenu.classList.toggle("inactive");
   order.classList.add("inactive");
-  cardsConstainer.classList.add("inactive")
+  cardsConstainer.classList.toggle("inactive")
 }
 
-function cartShopping() {
+function shoppingCart() {
   order.classList.toggle("inactive");
   mobileMenu.classList.add("inactive");
 }
