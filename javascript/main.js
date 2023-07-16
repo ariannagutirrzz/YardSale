@@ -29,6 +29,8 @@ function barritas() {
 function shoppingCart() {
   order.classList.toggle("inactive");
   mobileMenu.classList.add("inactive");
+  cardsConstainer.classList.toggle("inactive")
+
 }
 
 // PRODUCT CARDS
