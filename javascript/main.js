@@ -39,19 +39,25 @@ const productList = [
   {
     name: "Camera",
     price: 120,
-    img: "https://images.pexels.com/photos/16840121/pexels-photo-16840121/free-photo-of-camera-lying-among-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: "https://http2.mlstatic.com/D_NQ_NP_745276-MLV52320264720_112022-O.webp",
   },
   {
     name: "TV",
     price: 280,
-    img: "https://images.pexels.com/photos/16840121/pexels-photo-16840121/free-photo-of-camera-lying-among-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    img: "https://http2.mlstatic.com/D_NQ_NP_988410-MLV52575152124_112022-W.webp"
   },
   {
     name: "PlayStation 5",
     price: 600,
-    img: "https://images.pexels.com/photos/16840121/pexels-photo-16840121/free-photo-of-camera-lying-among-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    img: "https://http2.mlstatic.com/D_NQ_NP_887928-MLV45188629838_032021-O.webp",
+  },
+  {
+    name: "Desktop",
+    price: 300,
+    img: "https://http2.mlstatic.com/D_NQ_NP_738099-MLV49532436089_032022-O.webp",
   }
 ];
+
 
 function products (arr) {
     for(product of arr) {
@@ -59,7 +65,7 @@ function products (arr) {
             <img src= ${product.img}>
             <div class="product-info">
                 <div>
-                    <p>${product.price}</p>
+                    <p>$ ${product.price} </p>
                     <p>${product.name}</p>
                 </div>
                 <figure>
