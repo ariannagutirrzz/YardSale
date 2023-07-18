@@ -532,6 +532,30 @@ a:hover {
   max-width: 460px;
 }
 
+
+.go-back-a {
+  color: white;
+  text-decoration: none;
+}
+
+.go-back-a:hover {
+  color: white;
+}
+
+.go-back-button button{
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: white;
+  background-color: var(--HospitalGreen);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* !RESPONSIVE */
 
 @media (max-width: 640px) {
