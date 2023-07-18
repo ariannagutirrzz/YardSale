@@ -38,7 +38,7 @@ function shoppingCart() {
 const productList = [
   {
     name: "Camera",
-    price: 120,
+    price: 320,
     img: "https://http2.mlstatic.com/D_NQ_NP_745276-MLV52320264720_112022-O.webp",
     id: 1,
   },
@@ -59,9 +59,44 @@ const productList = [
     price: 300,
     img: "https://http2.mlstatic.com/D_NQ_NP_738099-MLV49532436089_032022-O.webp",
     id: 4,
+  },
+  {
+  name: "Keyboard",
+  price: 60,
+  img: "https://http2.mlstatic.com/D_NQ_NP_799745-MLV50693244466_072022-O.webp",
+  id: 5,
+  },
+  {
+    name: "Keyboard",
+    price: 30,
+    img: "https://http2.mlstatic.com/D_NQ_NP_935545-MLV43787380956_102020-O.webp",
+    id: 6,
+  },
+  {
+    name: "Hat",
+    price: 10,
+    img: "https://http2.mlstatic.com/D_NQ_NP_868146-MLV41782368839_052020-O.webp",
+    id: 7,
+  },
+  {
+    name: "Neckless",
+    price: 8,
+    img: "https://http2.mlstatic.com/D_NQ_NP_708319-MLV51755420966_092022-O.webp",
+    id: 8,
+  },
+  {
+    name: "Headphones",
+    price: 25,
+    img: "https://http2.mlstatic.com/D_NQ_NP_760753-MLV51571519729_092022-O.webp",
+    id: 9,
+  },
+  {
+    name: "Book",
+    price: 20,
+    img: "https://http2.mlstatic.com/D_NQ_NP_645385-MLV47017178168_082021-O.webp",
+    id: 10,
   }
 ];
-
 
 function products (arr) {
     for(product of arr) {
